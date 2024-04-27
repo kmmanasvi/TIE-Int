@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fingerprint Sensor</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <br>
+  <br>
+  <br>
+  <br>
+  <style>
+    body {
+      background-color: black;
+      background-size: cover; /* Adjust as needed */
+      background-position: center center; /* Adjust as needed */
+      background-attachment: fixed; /* Adjust as needed */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+  </style>
+</head>
+<body>
+<h1>Demo</h1>
+
+<style>
+    h1,h3{
+        color: aliceblue;
+        text-align: center;
+    }
+</style>
+<img id="responsiveImage" src="images/fingprint.jpg" alt="Responsive Image">
+<h3>scan your finger</h3>
+
+<script>
+
+    function showMessage() {
+    window.alert('Credentials saved successfully! You can get back to the home page');
+    window.location.href="index.html";
+  }
+  document.getElementById('responsiveImage').addEventListener('click', showMessage);
+
+</script>
+
+</body>
+</html>
